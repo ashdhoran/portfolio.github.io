@@ -1,0 +1,196 @@
+/* Global ------*/
+body{
+    color: #343434;
+    margin: 0;
+    padding: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+}
+img{
+    width: 300px;
+}
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    
+}
+h1{
+    font-size: 100px;
+}
+h2 {
+    
+    font-size: 45px;
+  }
+  h1, h2 {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    font-weight: 400;
+
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+
+
+
+/*--- profile ------*/
+
+header{
+    background-color:#006778;
+    color: white;
+    
+}
+
+
+
+/*---  PROJECTS------*/
+.project{
+    background-color: #DFDFDE;
+}
+.project-item{
+    overflow: hidden;
+    padding: 20px 0;
+    /*border-bottom: 1px dashed #1B1717;*/
+
+}
+
+.project-item h3{
+    margin: 0;
+}
+
+
+
+/*---WORK EXPERIENCE ------*/
+.work-exp{
+    background-color: #bfebe3;
+}
+.work-exp .content-wrap{
+    height: 500px;
+   padding-top: 20px;
+   /*padding-bottom: 80px;*/
+  
+}
+.job-item{
+    align-content: space-around;
+    padding: 20px 0;
+    /*border-bottom: 1px dashed #1B1717;*/
+}
+.job-details{
+   margin-top: 0;
+}
+
+/*--- CERTIFICATIONS ------*/
+.certificate{
+    background-color: #f5e1c8;
+    
+}
+.certificate .cert{
+    padding-bottom: 30px;
+}
+.certificate .content-wrap{
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+    
+}
+
+.certificate .btn{
+    background-color: #1B1717;
+    color: azure;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.certificate .btn:hover{
+    background: #343434;
+}
+
+/*---  EDUCATION------*/
+.education{
+    background-color: #d4a0a0;
+    background-image: url(../images/eduction.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 50px;
+
+}
+
+h3{
+    
+    margin: 0;
+}
+.item-details h3+p{
+    font-style: italic;
+}
+
+.item-details h3~p{
+    margin: 0;
+}
+.edc{
+    padding-bottom: 30px;
+}
+
+
+
+/*--- CONTACT INFO ------*/
+
+footer{
+    background-color: #1B1717;
+    color: aqua;
+    
+}
+footer .list{
+    color: aqua;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a{
+    color: aqua;
+    padding: 15px;
+    display: inline-block;
+}
+
+
+    /* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+header, footer {
+    text-align: center;
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+.list {
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width:749px){
+h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+h2 {
+    line-height: 1;
+}
+.list a {
+    padding: 5px;
+}
+}
